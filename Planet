@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Explorando o Universo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: radial-gradient(ellipse at center, #000000 0%, #0d0d2b 100%);
+      color: white;
+      text-align: center;
+      padding-bottom: 100px;
+    }
+    h1 {
+      font-size: 3em;
+      margin-top: 30px;
+    }
+    .section {
+      margin: 60px 0;
+    }
+    .item {
+      display: inline-block;
+      margin: 20px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .item:hover {
+      transform: scale(1.1);
+    }
+    .item img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 2px solid white;
+    }
+    .label {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Explorando o Universo</h1>
+
+<!-- Planetas -->
+<div class="section" id="planetas">
+  <h2>Planetas</h2>
+  <div class="item" onclick="playNarration('terra')">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/The_Blue_Marble_%28remastered%29.jpg" alt="Terra">
+    <div class="label">Terra</div>
+  </div>
+  <div class="item" onclick="playNarration('marte')">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg" alt="Marte">
+    <div class="label">Marte</div>
+  </div>
+  <div class="item" onclick="playNarration('jupiter')">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Jupiter.jpg
